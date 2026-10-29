@@ -1,0 +1,17 @@
+{
+  "name": "borrow-buddy",
+  "version": "1.0.0",
+  "description": "BorrowBuddy - Borrow & Return Tracker (MERN Stack)",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "seed": "npm run seed --prefix server",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
